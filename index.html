@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <script src="./js/script.js" defer></script>
+    <title>Elevator</title>
+  </head>
+  <body>
+    <header class="header">
+      <form class="form">
+        <input
+          class="form__input"
+          type="text"
+          placeholder="Количество этажей"
+        />
+        <button class="form__button" type="submit">Построить дом</button>
+      </form>
+    </header>
+    <main class="main">
+      <div class="house">
+        <div class="floors">
+          <div class="house__floor" data-floor="5">
+            <div class="house__floor__number">5</div>
+            <img src="./img/button.png" alt="button" />
+          </div>
+          <div class="house__floor" data-floor="4">
+            <div class="house__floor__number">4</div>
+            <img src="./img/button.png" alt="button" />
+          </div>
+          <div class="house__floor" data-floor="3">
+            <div class="house__floor__number">3</div>
+            <img src="./img/button.png" alt="button" />
+          </div>
+          <div class="house__floor" data-floor="2">
+            <div class="house__floor__number">2</div>
+            <img src="./img/button.png" alt="button" />
+          </div>
+          <div class="house__floor" data-floor="1">
+            <div class="house__floor__number floor__number_active">1</div>
+            <img src="./img/button.png" alt="button" />
+          </div>
+        </div>
+        <div class="elevator-wrapper">
+          <div class="elevator"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
