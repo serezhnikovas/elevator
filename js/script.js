@@ -74,7 +74,7 @@ buildingForm.addEventListener("submit", (event) => {
   const inputValue = document.querySelector(".form__input").value;
   if (inputValue) {
     if (!Number.isNaN(+inputValue)) {
-      if (+inputValue > 5) {
+      if (+inputValue > 4) {
         rebuildHouse(inputValue);
       } else {
         alert(
@@ -87,4 +87,5 @@ buildingForm.addEventListener("submit", (event) => {
   } else {
     alert("Так не пойдет, нужно указать число этажей.");
   }
+  document.querySelector(".form__input").value = "";
 });
